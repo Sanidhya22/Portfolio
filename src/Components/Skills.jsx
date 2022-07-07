@@ -1,0 +1,7 @@
+import React, { Component } from "react";
+
+function Skills() {
+  return null;
+}
+
+export default Skills;
