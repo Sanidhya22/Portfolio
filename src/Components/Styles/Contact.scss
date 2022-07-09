@@ -1,0 +1,66 @@
+.Contact{
+
+    text-align: center;
+    
+    .div2{
+        margin: 10px; 
+    }
+    .contactdiv1{
+        margin: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    section{
+        background-color:#DCD7C9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
+        margin-right: inherit;
+    }
+    
+    input {
+        border-width: 0px;
+        box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
+        border-color:#2C3639;
+        color:white;
+        padding: 10px;
+        border-radius: 15px;
+        width: 600px;
+        height:50px;
+        background-color: #2C3639;
+    }
+    textarea{
+        box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
+        height: 250px;
+        padding: 10px;
+        border-radius: 15px;
+        color:white;
+        width: 600px;
+        border-width: 0px;
+        background-color: #2C3639;
+    }
+    button{
+        height: 35px;
+        width: 180px;
+        border-radius: 14px !important;
+        background-color: #2C3639;
+        color: #DCD7C9;
+        border-color: #2C3639;
+        border-width: 0px;
+        box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
+    }
+    button:hover{
+        color: #A27B5C;
+        box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.25) ;
+    }
+    section:hover{
+        box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.25) ;
+    }  
+}

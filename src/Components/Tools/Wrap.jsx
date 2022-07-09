@@ -1,13 +1,17 @@
 import React, { Component } from "react";
 import SocialLinks from "../SocialLinks";
 import "../Styles/WrapApp.css";
-const Wrap = (WrapperComponent) =>
+import Navigatidots from "./NavigationDots";
+const Wrap = (WrapperComponent, Title) =>
   function HOC() {
     return (
       <React.Fragment>
         <div className="Wrap">
           <SocialLinks />
-          <WrapperComponent />
+          <div className="wrappeddiv">
+            <WrapperComponent />
+          </div>
+          <Navigatidots Title={Title} />
         </div>
       </React.Fragment>
     );

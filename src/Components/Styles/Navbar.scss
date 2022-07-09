@@ -1,0 +1,40 @@
+.Header{
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
+    .titleLogo {
+        font-size: 15px;
+        padding: 10px 14px  10px  14px;
+        margin: 5px;
+        }
+    .div1{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .Navbarlist{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 0rem !important;
+        margin-top: 0rem !important;
+        }
+    p{
+        background-image: linear-gradient(60deg, #b92b27, #1565C0);
+        background-clip: text;            
+        color: transparent;
+        font-size:x-large;
+        font-weight: 600;
+        
+    }  
+    ul {
+        list-style-type: none;
+        }
+    li{
+        padding: 10px 20px 5px 20px;
+        font-size:20px
+        }
+    a{
+        text-decoration: none !important;
+    }   
+}
+    

@@ -1,0 +1,23 @@
+.Sociallinks{
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    bottom:0%;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    a{
+    
+        background-color:#DCD7C9;
+        color: black !important;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0.30rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
