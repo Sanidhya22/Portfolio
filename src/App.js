@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import About from './Components/About';
 import Home from './Components/Home';
 import Contact from './Components/Contact';
+import Work from './Components/Work';
+import Skills from './Components/Skills';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
+      <Work/>
+      <Skills/>
       <Contact/>
     
     </div>

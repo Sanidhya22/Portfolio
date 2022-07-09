@@ -4,7 +4,7 @@ import "./Styles/Home.scss";
 function Home() {
   return (
     <React.Fragment>
-      <div className="Home">
+      <div id="Home" className="Home">
         <h1>Hello,I Am </h1>
         <h1>Frontend</h1>
         <h1>Developer</h1>

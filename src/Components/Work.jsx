@@ -1,7 +1,14 @@
 import React, { Component } from "react";
+import Wrap from "./Tools/Wrap";
 
 function Work() {
-  return null;
+  return (
+    <>
+      <div id="Work" className="Work">
+        <p>Work</p>
+      </div>
+    </>
+  );
 }
 
-export default Work;
+export default Wrap(Work, "Work");

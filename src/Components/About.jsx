@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Wrap from "./Tools/Wrap";
 import img from "../Assets&Images/Snapchat-131483175__01.jpg";
-import "./Styles/About.css";
+import "./Styles/About.scss";
 function About() {
   return (
     <>
-      <div id="About" className="Cont1">
+      <div id="About" className="About">
         <h2 className="head-text">
           About<span>Me</span>
         </h2>

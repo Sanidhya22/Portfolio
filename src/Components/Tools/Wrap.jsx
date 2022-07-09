@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SocialLinks from "../SocialLinks";
-import "../Styles/WrapApp.css";
+import "../Styles/WrapApp.scss";
 import Navigatidots from "./NavigationDots";
 const Wrap = (WrapperComponent, Title) =>
   function HOC() {
