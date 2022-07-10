@@ -1,0 +1,30 @@
+.Work{
+    text-align: center;
+img{
+    width: 250px;
+    height: 150px;
+}
+.Projectsdiv{
+    margin: 0 auto;
+    background-color: aquamarine;
+    width: 900px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px ;
+    grid-template-rows: 200px ;
+align-items: center;
+}
+.Techdiv{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    div{
+        font-size: larger;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 40px;
+    }
+    
+}
+.Techtitle:hover{
+    background-color:antiquewhite ;
+}
+}

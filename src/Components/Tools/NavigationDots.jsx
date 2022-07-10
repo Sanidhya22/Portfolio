@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BsSlack } from "react-icons/bs";
-import "../Styles/Navigationdots.css";
+import "../Styles/Navigationdots.scss";
 function Navigatidots({ Title }) {
   return (
     <>

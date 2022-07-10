@@ -3,25 +3,19 @@ import emailjs from "@emailjs/browser";
 import "./Styles/Contact.scss";
 import { HiMail } from "react-icons/hi";
 import { BiMobileAlt } from "react-icons/bi";
-import {
-  YOUR_PUBLIC_KEY,
-  YOUR_SERVICE_ID,
-  YOUR_TEMPLATE_ID,
-} from "../emailkeys";
-
 import Wrap from "./Tools/Wrap";
+
 function Contact() {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        YOUR_SERVICE_ID,
-        YOUR_TEMPLATE_ID,
+        process.env.REACT_APP_YOUR_SERVICE_ID,
+        process.env.REACT_APP_YOUR_TEMPLATE_ID,
         form.current,
-        YOUR_PUBLIC_KEY
+        process.env.REACT_APP_YOUR_PUBLIC_KEY
       )
       .then(
         (result) => {

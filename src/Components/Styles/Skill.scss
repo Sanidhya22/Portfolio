@@ -1,0 +1,36 @@
+.Skills{
+
+    text-align: center;
+    .Skilldiv{
+        width:900px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 300px 300px 300px ;
+        grid-template-rows: 150px 150px  150px 150px ;
+        align-items: center;
+        justify-items: center;
+        // box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
+        // border-style:solid;
+        border-radius: 20px;
+        border-color: black;
+
+    }
+    .Skilltitle{
+        box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
+        width: 10rem;
+        height: 8rem;
+        border-style:solid;
+        border-radius: 20px;
+        border-color: black;
+        font-size: larger;
+        font-weight: 700;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .Icon{
+        margin: 1rem;
+      color: gray;
+    }
+    h1{
+        margin: 40px;
+    }
+}
