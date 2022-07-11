@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 import Wrap from "./Tools/Wrap";
-import image from "../Assets&Images/InfiniteScroll.gif";
 import "./Styles/Work.scss";
 import { Technologies, Projects } from "../Contants/WorkData";
 import { useState } from "react";
 function Work() {
   const [Title, setTitle] = useState("JavaScript");
-  const [projects, setprojects] = useState(Projects[Title]);
+  const [projects, setprojects] = useState(Projects.JavaScript);
 
   const selectprojects = (s) => {
     setTitle(s);
-
-    setprojects(Projects[Title]);
+    setprojects(Projects[s]);
   };
   // setprojects(Projects.JavaScript);
   // projects.map((item) => console.log(item));
@@ -25,7 +23,9 @@ function Work() {
           {Technologies.map((j) => {
             return (
               <div
-                className="Techtitle"
+                className={
+                  "Techtitle " + (Title === j.Name ? "Titleactive" : "")
+                }
                 onClick={() => {
                   selectprojects(j.Name);
                 }}
@@ -43,7 +43,7 @@ function Work() {
                   <img src={i.Image}></img>
                 </div>
                 <div class="card-body">
-                  <span class="tag tag-teal">JavaScript</span>
+                  <span class="tag tag-teal">{Title}</span>
                   <p>Why is the Tesla Cybertruck designed the way it is?</p>
                   <p>An exploration into the truck's polarising design</p>
                   <a href="" className="link">

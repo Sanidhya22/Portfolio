@@ -1,22 +1,18 @@
 import React, { Component } from "react";
 import { BsInstagram, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
+import { Platforms } from "../Contants/Sociallinksdata";
 import "./Styles/SocialLinks.scss";
 function SocialLinks() {
   return (
     <React.Fragment>
       <div className="Sociallinks">
-        <a href="">
-          <BsLinkedin />
-        </a>
-        <a href="">
-          <BsTwitter />
-        </a>
-        <a href="">
-          <BsGithub />
-        </a>
-        <a href="">
-          <BsInstagram />
-        </a>
+        {Platforms.map((i) => {
+          return (
+            <a href={i.Link}>
+              <i.icon size={20} />
+            </a>
+          );
+        })}
       </div>
     </React.Fragment>
   );
