@@ -6,9 +6,9 @@ function About() {
   return (
     <>
       <div id="About" className="About">
-        <h2 className="head-text">
-          About<span>Me</span>
-        </h2>
+        <h1 className="head-text">
+          About<span> Me</span>
+        </h1>
         <img src={img} alt=" " />
         <h2 className="bold-text">Saniddhya Nigam</h2>
         <p className="p-text">

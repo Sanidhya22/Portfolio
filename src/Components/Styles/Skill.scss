@@ -2,24 +2,32 @@
 
     text-align: center;
     .Skilldiv{
-        width:900px;
+        width:800px;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: 300px 300px 300px ;
-        grid-template-rows: 150px 150px  150px 150px ;
-        align-items: center;
-        justify-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
         // box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
         // border-style:solid;
-        border-radius: 20px;
-        border-color: black;
+        // border-radius: 20px;
+        // border-color: black;
 
     }
     .Skilltitle{
+       
+        width: 9rem;
+        border:1px solid #000;
+        flex-grow: 1;
+        min-height: 100px;
+        box-sizing: border-box;
+        margin: 30px;
+        justify-content: space-between;
+        text-align: center;
+
         border: 0.05rem solid #fff;
-  border-radius: 2rem;
-  padding: 0.4em;
-  box-shadow: 0 0 .2rem #fff,
+        border-radius: 2rem;
+        padding: 0.4em;
+        box-shadow: 0 0 .2rem #fff,
             0 0 1.0rem #3543de,
             inset 0 0 .5rem #3543de;
             //   0 0 .2rem #fff,
@@ -27,8 +35,8 @@
             //   0 0 0.8rem #bc13fe,
               
         // box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
-        width: 10rem;
-        height: 8rem;
+        // width: 10rem;
+        // height: 8rem;
         // border-style:solid;
         // border-radius: 20px;
         // border-color: black;
@@ -38,9 +46,10 @@
     }
     .Icon{
         margin: 1rem;
-      color: black;
+        color: #2c6fbb;
     }
     h1{
         margin: 40px;
+        font-size: 4rem;
     }
 }
