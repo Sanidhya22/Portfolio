@@ -25,27 +25,18 @@ export const Projects ={
         "Name": "Quote Generator",
         "Disc":"Hi",
         "Image":Image3
-    },{
-        "Name": "Infinite Scroller",
-        "Disc":"Hi",
-        "Image":Image1
-    },
-    {
-        "Name": "Youtube Search Api",
-        "Disc":"Hi",
-        "Image":Image2
-    },
-    {
-        "Name": "Quote Generator",
-        "Disc":"Hi",
-        "Image":Image3
     }],
 
     "ReactJs":[
         {
             "Name":"Ecommerce Website",
             "Disc":"Hi",
-            "Image":"Hi"
+            "Image":Image1
+        },
+        {
+            "Name":"Ecommerce Website",
+            "Disc":"Hi",
+            "Image":Image1
         }
     ],
     "Angular":[

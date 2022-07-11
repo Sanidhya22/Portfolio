@@ -16,19 +16,29 @@
 
     }
     .Skilltitle{
-        box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
+        border: 0.05rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+            0 0 1.0rem #3543de,
+            inset 0 0 .5rem #3543de;
+            //   0 0 .2rem #fff,
+            //   0 0 2rem #bc13fe,
+            //   0 0 0.8rem #bc13fe,
+              
+        // box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
         width: 10rem;
         height: 8rem;
-        border-style:solid;
-        border-radius: 20px;
-        border-color: black;
+        // border-style:solid;
+        // border-radius: 20px;
+        // border-color: black;
         font-size: larger;
         font-weight: 700;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .Icon{
         margin: 1rem;
-      color: gray;
+      color: black;
     }
     h1{
         margin: 40px;

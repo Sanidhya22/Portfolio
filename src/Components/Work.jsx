@@ -5,9 +5,13 @@ import "./Styles/Work.scss";
 import { Technologies, Projects } from "../Contants/WorkData";
 import { useState } from "react";
 function Work() {
-  const [projects, setprojects] = useState(Projects.JavaScript);
+  const [Title, setTitle] = useState("JavaScript");
+  const [projects, setprojects] = useState(Projects[Title]);
+
   const selectprojects = (s) => {
-    setprojects(Projects[s]);
+    setTitle(s);
+
+    setprojects(Projects[Title]);
   };
   // setprojects(Projects.JavaScript);
   // projects.map((item) => console.log(item));
@@ -34,8 +38,18 @@ function Work() {
         <div className="Projectsdiv">
           {projects.map((i) => {
             return (
-              <div className="card1">
-                <img src={i.Image}></img>
+              <div class="card1">
+                <div class="card-header">
+                  <img src={i.Image}></img>
+                </div>
+                <div class="card-body">
+                  <span class="tag tag-teal">JavaScript</span>
+                  <p>Why is the Tesla Cybertruck designed the way it is?</p>
+                  <p>An exploration into the truck's polarising design</p>
+                  <a href="" className="link">
+                    Github Link
+                  </a>
+                </div>
               </div>
             );
           })}
