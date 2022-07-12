@@ -33,7 +33,11 @@ function About() {
             })}
           </div>
         </div>
-        <a href="https://github.com/Sanidhya22" className="link">
+        <a
+          target="_blank"
+          href="https://github.com/Sanidhya22"
+          className="link"
+        >
           Github
         </a>
       </div>
