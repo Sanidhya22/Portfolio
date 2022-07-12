@@ -1,6 +1,6 @@
 import { BsInstagram, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
 
-export const Platforms =[
+export const  Platforms =[
     {
         "Link":"https://github.com/Sanidhya22",
         "icon":BsGithub

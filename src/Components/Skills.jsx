@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Wrap from "./Tools/Wrap";
+import Wrap from "../Tools/Wrap";
 import { skills } from "../Contants/SkillsData";
-import "./Styles/Skill.scss";
+import "../Styles/Skill.scss";
 
 function Skills() {
   return (

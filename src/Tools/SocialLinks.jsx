@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BsInstagram, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
 import { Platforms } from "../Contants/Sociallinksdata";
-import "./Styles/SocialLinks.scss";
+import "../Styles/SocialLinks.scss";
 function SocialLinks() {
   return (
     <React.Fragment>

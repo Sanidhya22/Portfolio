@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SocialLinks from "../SocialLinks";
+import SocialLinks from "./SocialLinks";
 import "../Styles/WrapApp.scss";
 import Navigatidots from "./NavigationDots";
 const Wrap = (WrapperComponent, Title) =>

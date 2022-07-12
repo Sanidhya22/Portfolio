@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Wrap from "./Tools/Wrap";
-import "./Styles/Work.scss";
+import Wrap from "../Tools/Wrap";
+import "../Styles/Work.scss";
 import { Technologies, Projects } from "../Contants/WorkData";
 import { useState } from "react";
 function Work() {
@@ -46,7 +46,11 @@ function Work() {
                   <span class="tag tag-teal">{Title}</span>
                   <p>Why is the Tesla Cybertruck designed the way it is?</p>
                   <p>An exploration into the truck's polarising design</p>
-                  <a href="" className="link">
+                  <a
+                    href="https://github.com/Sanidhya22"
+                    target="_blank"
+                    className="link"
+                  >
                     Github Link
                   </a>
                 </div>

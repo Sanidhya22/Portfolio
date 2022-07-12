@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Wrap from "./Tools/Wrap";
+// import Wrap from "./Tools/Wrap";
 import img from "../Assets&Images/Snapchat-131483175__01.jpg";
-import "./Styles/About.scss";
+import "../Styles/About.scss";
+import Wrap from "../Tools/Wrap";
 function About() {
   return (
     <>
@@ -10,12 +11,16 @@ function About() {
           About<span> Me</span>
         </h1>
         <img src={img} alt=" " />
-        <h2 className="bold-text">Saniddhya Nigam</h2>
+
         <p className="p-text">
-          Hello, my name is Saniddhya, I'm 23 years old and I'm a web developer
-          passionate about frontend, also a lover of designing pages or other
-          things and whenever I can I'm willing to learn new technologies.
+          Hello, my name is Saniddhya, I'm a FrontEnd web developer Having
+          Knowledge of JavaScript , Reactjs NodeJs ,HTML , CSS , Bootstrap
+          ,MySQL Having own experience of 1 year ,Currently working at Epam
+          Systems having 5 months of experience
         </p>
+        <div className="Academics">
+          <h3>Academics</h3>
+        </div>
         <a href="https://github.com/Sanidhya22" className="link">
           Github
         </a>
