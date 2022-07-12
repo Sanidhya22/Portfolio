@@ -23,7 +23,7 @@ function About() {
           <div className="AcademicsCard">
             {Education.map((i) => {
               return (
-                <div className="card1">
+                <div key={i.Type} className="card1">
                   <p className="Type0">{i.Type}</p>
                   <p className="Type">{i.Name}</p>
                   <p className="Type">{i.Year}</p>

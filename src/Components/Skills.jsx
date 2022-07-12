@@ -11,7 +11,7 @@ function Skills() {
         <div className="Skilldiv">
           {skills.map((j) => {
             return (
-              <div className="Skilltitle">
+              <div key={j.Name} className="Skilltitle">
                 <div className="Icon">
                   <j.Icon size={50} />
                 </div>

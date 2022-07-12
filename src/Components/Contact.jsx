@@ -4,14 +4,14 @@ import "../Styles/Contact.scss";
 import { HiMail } from "react-icons/hi";
 import { BiMobileAlt } from "react-icons/bi";
 import Wrap from "../Tools/Wrap";
-// import { toast } from "https://cdn.skypack.dev/wc-toast";
+import { toast } from "https://cdn.skypack.dev/wc-toast";
 
 function Contact() {
   const form = useRef();
 
-  // const handleEmojiToast = () => {
-  //   toast("Message Sent", { icon: { type: "custom", content: "😃" } });
-  // };
+  const handleEmojiToast = () => {
+    toast("Message Sent", { icon: { type: "custom", content: "😃" } });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,7 +26,7 @@ function Contact() {
         (result) => {
           console.log(result.text);
           form.current.reset();
-          // handleEmojiToast();
+          handleEmojiToast();
         },
         (error) => {
           console.log(error.text);

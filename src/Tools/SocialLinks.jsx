@@ -8,7 +8,7 @@ function SocialLinks() {
       <div className="Sociallinks">
         {Platforms.map((i) => {
           return (
-            <a target="_blank" href={i.Link}>
+            <a key={i.Link} target="_blank" href={i.Link}>
               <i.icon size={20} />
             </a>
           );

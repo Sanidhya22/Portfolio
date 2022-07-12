@@ -23,6 +23,7 @@ function Work() {
           {Technologies.map((j) => {
             return (
               <div
+                key={j.Name}
                 className={
                   "Techtitle " + (Title === j.Name ? "Titleactive" : "")
                 }
@@ -36,14 +37,14 @@ function Work() {
           })}
         </div>
         <div className="Projectsdiv">
-          {projects.map((i) => {
+          {projects.map((i, k) => {
             return (
-              <div class="card1">
-                <div class="card-header">
+              <div key={k} className="card1">
+                <div className="card-header">
                   <img src={i.Image}></img>
                 </div>
-                <div class="card-body">
-                  <span class="tag tag-teal">{Title}</span>
+                <div className="card-body">
+                  <span className="tag tag-teal">{Title}</span>
                   <p>Why is the Tesla Cybertruck designed the way it is?</p>
                   <p>An exploration into the truck's polarising design</p>
                   <a
