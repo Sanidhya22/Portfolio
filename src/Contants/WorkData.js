@@ -25,7 +25,13 @@ export const Projects ={
         "Name": "Quote Generator",
         "Disc":"Hi",
         "Image":Image3
-    }],
+    },
+    {
+        "Name": "Quote Generator",
+        "Disc":"Hi",
+        "Image":Image3
+    }
+],
 
     "ReactJs":[
         {

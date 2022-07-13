@@ -45,8 +45,8 @@ function Work() {
                 </div>
                 <div className="card-body">
                   <span className="tag tag-teal">{Title}</span>
-                  <p>Why is the Tesla Cybertruck designed the way it is?</p>
-                  <p>An exploration into the truck's polarising design</p>
+                  <p>{i.Name}</p>
+                  <p>{i.Disc}</p>
                   <a
                     href="https://github.com/Sanidhya22"
                     target="_blank"

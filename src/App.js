@@ -6,9 +6,12 @@ import Home from './Components/Home';
 import Contact from './Components/Contact';
 import Work from './Components/Work';
 import Skills from './Components/Skills';
+import Particle from './Particles';
 
 function App() {
   return (
+  <>
+  <Particle/>
     <div className='mainApp'>
       <Navbar/>
       <Home/>
@@ -16,8 +19,9 @@ function App() {
       <Work/>
       <Skills/>
       <Contact/>
+      </div>
     
-    </div>
+    </>
   );
 }
 

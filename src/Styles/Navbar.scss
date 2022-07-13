@@ -1,7 +1,7 @@
 .Header{
     // position: fixed;
     // width: -webkit-fill-available;;
-    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.1) ;
     .titleLogo {
         font-size: 25px;
         padding: .5rem 0;
@@ -11,6 +11,7 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.2);
     }
     .Navbarlist{
         display: flex;
@@ -35,7 +36,13 @@
         font-size:20px
         }
     a{
+        font-size: larger;
+        font-weight: 600;
+        color: #EEEEEE;
         text-decoration: none !important;
-    }   
+    } 
+    a:hover{
+        color:black !important;
+    }  
 }
     
