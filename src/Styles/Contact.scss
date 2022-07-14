@@ -1,7 +1,12 @@
 .Contact{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+    width: 100%;
+    background-size: contain;
     text-align: center;
-    
+    flex-direction: column;
     .div2{
         margin: 10px; 
     }

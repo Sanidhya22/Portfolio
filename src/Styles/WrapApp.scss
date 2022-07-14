@@ -1,12 +1,14 @@
 .Wrap{
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .wrappeddiv{
+    padding: 4rem 2rem;
+    flex: 1 1;
+    width: 100%;
+    flex-direction: column;
     margin-bottom:40px;
-    width: 1400px;
     margin-left: 70px;
   
 }

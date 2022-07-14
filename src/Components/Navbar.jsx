@@ -6,7 +6,7 @@ const Navbar = () => {
   const i = "</>";
   return (
     <>
-      <header id="/" className="Header">
+      <header className="Header">
         <div className="div1">
           <p className="titleLogo">Saniddhya99{i}</p>
 
