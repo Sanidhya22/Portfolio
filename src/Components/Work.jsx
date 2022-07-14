@@ -54,17 +54,17 @@ function Work() {
                 </div>
                 <div className="card-body">
                   <span className="tag tag-teal">{Title}</span>
-                  <p>{i.Name}</p>
-                  <p>{i.Disc}</p>
-                  <a
-                    href="https://github.com/Sanidhya22"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    Github Link
-                  </a>
+                  <p className="projecttitle">{i.Name}</p>
+                  <p className="projectdisc">{i.Disc}</p>
                 </div>
+                <a
+                  href="https://github.com/Sanidhya22"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                >
+                  Github Link
+                </a>
               </div>
             );
           })}

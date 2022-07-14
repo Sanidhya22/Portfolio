@@ -17,17 +17,17 @@ export const Projects ={
     "JavaScript":[
     {
         "Name": "Infinite Scroller",
-        "Disc":"Hi",
+        "Disc":"Infinite scrolling is a feature that allows you to load some pics on a website and then load more before the user reaches the end of the webpage",
         "Image":Image1
     },
     {
         "Name": "Youtube Search Api",
-        "Disc":"Hi",
+        "Disc":"Search API Returns a collection of search results that match the query parameters specified in the API reques",
         "Image":Image2
     },
     {
         "Name": "Quote Generator",
-        "Disc":"Hi",
+        "Disc":"The Random Quote Generator is used to generate random quotes From API",
         "Image":Image3
     }
 ],
@@ -35,19 +35,19 @@ export const Projects ={
     "ReactJs":[
         {
             "Name":"Ecommerce Website",
-            "Disc":"Ecommerce-Website-with-React-Redux with JSON server to Fetch Mock Data",
+            "Disc":"Ecommerce-Website-with-React-Redux with user JSON server to Fetch Mock Data",
             "Image":Ecom
         },
         {
-            "Name":"TODO List",
-            "Disc":"Hi",
+            "Name":"TODO App",
+            "Disc":"A simple todo application using React",
             "Image":Todo
         }
     ],
     "Angular":[
         {
             "Name":"User Management Webpage",
-            "Disc":"Hi",
+            "Disc":"User management System with Bootstrap",
             "Image":Usermng
         }
     ],
