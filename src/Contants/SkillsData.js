@@ -1,6 +1,6 @@
 import {SiJavascript,SiSass,SiHtml5,SiBabel,SiWebpack} from "react-icons/si"
 import {RiReactjsLine} from "react-icons/ri"
-import {DiAngularSimple} from "react-icons/di"
+// import {DiAngularSimple} from "react-icons/di"
 import {BsFillBootstrapFill} from "react-icons/bs"
 import {FaCode,FaNode} from "react-icons/fa"
 

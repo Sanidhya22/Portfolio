@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import SocialLinks from "./SocialLinks";
 import "../Styles/WrapApp.scss";
 import Navigatidots from "./NavigationDots";

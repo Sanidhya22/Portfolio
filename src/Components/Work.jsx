@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Wrap from "../Tools/Wrap";
 import "../Styles/Work.scss";
 import { motion } from "framer-motion";
@@ -47,7 +47,7 @@ function Work() {
             return (
               <div key={k} className="card1">
                 <div className="card-header">
-                  <img src={i.Image}></img>
+                  <img alt="Myphoto" src={i.Image}></img>
                 </div>
                 <div className="card-body">
                   <span className="tag tag-teal">{Title}</span>
@@ -56,6 +56,7 @@ function Work() {
                   <a
                     href="https://github.com/Sanidhya22"
                     target="_blank"
+                    rel="noreferrer"
                     className="link"
                   >
                     Github Link

@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
-import { keyframes } from "styled-components";
+// import styled from "styled-components";
+// import { keyframes } from "styled-components";
 import "../Styles/Navbar.scss";
 const Navbar = () => {
   const i = "</>";

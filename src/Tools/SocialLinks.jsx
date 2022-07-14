@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Platforms } from "../Contants/Sociallinksdata";
 import "../Styles/SocialLinks.scss";
 function SocialLinks() {
@@ -7,7 +7,7 @@ function SocialLinks() {
       <div className="Sociallinks">
         {Platforms.map((i) => {
           return (
-            <a key={i.Link} target="_blank" href={i.Link}>
+            <a key={i.Link} target="_blank" rel="noreferrer" href={i.Link}>
               <i.icon size={20} />
             </a>
           );

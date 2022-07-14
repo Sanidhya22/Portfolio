@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { Education } from "../Contants/Academics";
 import img from "../Assets&Images/Snapchat-131483175__01.jpg";
@@ -40,6 +40,7 @@ function About() {
           </div>
         </div>
         <a
+          rel="noreferrer"
           target="_blank"
           href="https://github.com/Sanidhya22"
           className="link"

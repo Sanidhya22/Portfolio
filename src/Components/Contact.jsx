@@ -1,4 +1,4 @@
-import React, { Component, useRef } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../Styles/Contact.scss";
 import { motion } from "framer-motion";
