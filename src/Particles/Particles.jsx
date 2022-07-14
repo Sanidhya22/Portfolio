@@ -51,7 +51,7 @@ function Particle() {
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#2C3639",
           },
           links: {
             color: "#ffffff",

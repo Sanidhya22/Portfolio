@@ -6,7 +6,7 @@ import Home from './Components/Home';
 import Contact from './Components/Contact';
 import Work from './Components/Work';
 import Skills from './Components/Skills';
-import Particle from './Particles';
+import Particle from './Particles/Particles';
 
 function App() {
   return (
