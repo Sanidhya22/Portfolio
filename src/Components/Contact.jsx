@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { HiMail } from "react-icons/hi";
 import { BiMobileAlt } from "react-icons/bi";
 import Wrap from "../Tools/Wrap";
-import { toast } from "https://cdn.skypack.dev/wc-toast";
+import { toast } from "wc-toast";
 
 function Contact() {
   const form = useRef();
