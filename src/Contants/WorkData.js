@@ -1,6 +1,7 @@
 import Image1 from "../Assets&Images/InfiniteScroll.gif"
 import Image2 from "../Assets&Images/YoutubeSearch.gif"
 import Image3 from "../Assets&Images/QuoteGenerator.gif"
+import Nodeimage from "../Assets&Images/Node.png"
 
 export const Technologies =[
     {"Name":"JavaScript"},
@@ -56,7 +57,7 @@ export const Projects ={
         {
             "Name":"CRUD-REST-API-with-NODE-JS-Express-and-POSTGRES-DB",
             "Disc":"Hi",
-            "Image":"Hi"
+            "Image":Nodeimage
         }
     ]
 }

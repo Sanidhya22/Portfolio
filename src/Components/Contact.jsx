@@ -1,6 +1,8 @@
 import React, { Component, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../Styles/Contact.scss";
+import { motion } from "framer-motion";
+
 import { HiMail } from "react-icons/hi";
 import { BiMobileAlt } from "react-icons/bi";
 import Wrap from "../Tools/Wrap";
@@ -37,7 +39,12 @@ function Contact() {
   return (
     <React.Fragment>
       <wc-toast></wc-toast>
-      <div id="Contact" className="Contact">
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        id="Contact"
+        className="Contact"
+      >
         <h1>Contact</h1>
         <div className="contactdiv1">
           <section>
@@ -80,7 +87,7 @@ function Contact() {
             Send Message
           </button>
         </form>
-      </div>
+      </motion.div>
     </React.Fragment>
   );
 }

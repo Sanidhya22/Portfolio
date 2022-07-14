@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { motion } from "framer-motion";
+
 import Wrap from "../Tools/Wrap";
 import { skills } from "../Contants/SkillsData";
 import "../Styles/Skill.scss";
@@ -11,12 +13,17 @@ function Skills() {
         <div className="Skilldiv">
           {skills.map((j) => {
             return (
-              <div key={j.Name} className="Skilltitle">
+              <motion.div
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 0.5 }}
+                key={j.Name}
+                className="Skilltitle"
+              >
                 <div className="Icon">
                   <j.Icon size={50} />
                 </div>
                 {j.Name}
-              </div>
+              </motion.div>
             );
           })}
         </div>

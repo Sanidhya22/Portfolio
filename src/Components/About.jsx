@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { motion } from "framer-motion";
 import { Education } from "../Contants/Academics";
 import img from "../Assets&Images/Snapchat-131483175__01.jpg";
 import "../Styles/About.scss";
@@ -6,7 +7,12 @@ import Wrap from "../Tools/Wrap";
 function About() {
   return (
     <>
-      <div id="About" className="About">
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        id="About"
+        className="About"
+      >
         <h1 className="head-text">
           About<span> Me</span>
         </h1>
@@ -40,7 +46,7 @@ function About() {
         >
           Github
         </a>
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -7,7 +7,7 @@ function Navigatidots({ Title }) {
         {["/", "About", "Work", "Skills", "Contact"].map((i) => (
           <a
             href={`#${i}`}
-            style={Title == i ? { backgroundColor: "#A27B5C" } : {}}
+            style={Title == i ? { backgroundColor: "#00ADB5" } : {}}
             className="dot"
             key={i}
           ></a>

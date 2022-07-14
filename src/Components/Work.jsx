@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Wrap from "../Tools/Wrap";
 import "../Styles/Work.scss";
+import { motion } from "framer-motion";
 import { Technologies, Projects } from "../Contants/WorkData";
 import { useState } from "react";
+
 function Work() {
   const [Title, setTitle] = useState("JavaScript");
   const [projects, setprojects] = useState(Projects.JavaScript);
@@ -36,7 +38,11 @@ function Work() {
             );
           })}
         </div>
-        <div className="Projectsdiv">
+        <motion.div
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ duration: 0.5 }}
+          className="Projectsdiv"
+        >
           {projects.map((i, k) => {
             return (
               <div key={k} className="card1">
@@ -58,7 +64,7 @@ function Work() {
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </>
   );
