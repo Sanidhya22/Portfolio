@@ -3,14 +3,16 @@
     position: fixed;
     box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.1) ;
     .titleLogo {
+        font-family: 'Edu SA Beginner', cursive ;
         font-size: 25px;
+        
         padding: .5rem 0;
-        margin: 0.5rem 0rem;
+        margin: 0.5rem 3rem;
         }
     .div1{
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: rgba(0, 0, 0, 0.2);
     }
     .Navbarlist{
@@ -18,7 +20,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
-        margin: 0.5rem 0rem !important;
+        margin: 0.5rem 3rem !important;
         }
     p{
         background-image: linear-gradient(60deg, #b92b27, #1565C0);

@@ -9,7 +9,7 @@ function Skills() {
   return (
     <>
       <div id="Skills" className="Skills">
-        <h1>Skills</h1>
+        <h1 className="title">Skills</h1>
         <div className="Skilldiv">
           {skills.map((j) => {
             return (

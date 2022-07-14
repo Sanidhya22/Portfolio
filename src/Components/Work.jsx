@@ -8,19 +8,22 @@ import { useState } from "react";
 function Work() {
   const [Title, setTitle] = useState("JavaScript");
   const [projects, setprojects] = useState(Projects.JavaScript);
-
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const selectprojects = (s) => {
-    setTitle(s);
-    setprojects(Projects[s]);
+    setAnimateCard([{ y: 100, opacity: 0 }]);
+
+    setTimeout(() => {
+      setAnimateCard([{ y: 0, opacity: 1 }]);
+      setTitle(s);
+      setprojects(Projects[s]);
+    }, 500);
   };
-  // setprojects(Projects.JavaScript);
-  // projects.map((item) => console.log(item));
-  // console.log(projects)
 
   return (
     <>
       <div id="Work" className="Work">
-        <h1>Work</h1>
+        <h1 className="title">Work</h1>
+
         <div className="Techdiv">
           {Technologies.map((j) => {
             return (
@@ -39,8 +42,8 @@ function Work() {
           })}
         </div>
         <motion.div
-          whileInView={{ opacity: [0, 1] }}
-          transition={{ duration: 0.5 }}
+          animate={animateCard}
+          transition={{ duration: 0.5, delayChildren: 0.5 }}
           className="Projectsdiv"
         >
           {projects.map((i, k) => {
