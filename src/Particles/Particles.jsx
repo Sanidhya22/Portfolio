@@ -28,6 +28,7 @@ function Particle() {
         },
         fpsLimit: 120,
         interactivity: {
+          // detect_on: "window",
           events: {
             onClick: {
               enable: false,
@@ -51,7 +52,7 @@ function Particle() {
         },
         particles: {
           color: {
-            value: "#2C3639",
+            value: "#3F4E4F",
           },
           links: {
             color: "#ffffff",

@@ -11,7 +11,7 @@ import Particle from './Particles/Particles';
 function App() {
   return (
   <>
-  <Particle/>
+  {/* <Particle/> */}
     <div className='mainApp'>
       <Navbar/>
       <Home/>

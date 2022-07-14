@@ -16,7 +16,8 @@ function About() {
           Hello, My Self Saniddhya, I'm a FrontEnd web developer Having
           Knowledge of JavaScript , Reactjs NodeJs ,HTML , CSS , Bootstrap
           ,MySQL. <br /> Having own experience of 1 year ,Currently working at
-          Epam Systems having 5 months of experience
+          Epam Systems having 5 months of experience .And Previously worked at
+          Wipro Limited as a Project Enginner for 6 Months
         </p>
         <div className="Academics">
           <h3>Academics</h3>
@@ -26,8 +27,7 @@ function About() {
                 <div key={i.Type} className="card1">
                   <p className="Type0">{i.Type}</p>
                   <p className="Type">{i.Name}</p>
-                  <p className="Type">{i.Year}</p>
-                  <p className="Type">{i.Marks}</p>
+                  <p className="Type2">{i.Year}</p>
                 </div>
               );
             })}
