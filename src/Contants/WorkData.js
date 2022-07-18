@@ -18,17 +18,20 @@ export const Projects ={
     {
         "Name": "Infinite Scroller",
         "Disc":"Infinite scrolling is a feature that allows you to load some pics on a website and then load more before the user reaches the end of the webpage",
-        "Image":Image1
+        "Image":Image1,
+        "Link":"https://github.com/Sanidhya22/Infinity-scroll"
     },
     {
         "Name": "Youtube Search Api",
         "Disc":"Search API Returns a collection of search results that match the query parameters specified in the API reques",
-        "Image":Image2
+        "Image":Image2,
+        "Link":"https://github.com/Sanidhya22/Youtube-Search-V3Api-with-JS"
     },
     {
         "Name": "Quote Generator",
         "Disc":"The Random Quote Generator is used to generate random quotes From API",
-        "Image":Image3
+        "Image":Image3,
+        "Link":"https://github.com/Sanidhya22/Quote-generater"
     }
 ],
 
@@ -36,26 +39,30 @@ export const Projects ={
         {
             "Name":"Ecommerce Website",
             "Disc":"Ecommerce-Website-with-React-Redux with user JSON server to Fetch Mock Data",
-            "Image":Ecom
+            "Image":Ecom,
+            "Link":"https://github.com/Sanidhya22/Ecommerce-Website-with-React-Redux"
         },
         {
             "Name":"TODO App",
             "Disc":"A simple todo application using React",
-            "Image":Todo
+            "Image":Todo,
+            "Link":"https://github.com/Sanidhya22/TODO-App-React"
         }
     ],
     "Angular":[
         {
             "Name":"User Management Webpage",
             "Disc":"User management System with Bootstrap",
-            "Image":Usermng
+            "Image":Usermng,
+            "Link":""
         }
     ],
     "NodeJs":[
         {
             "Name":"CRUD-REST-API-with-NODE-JS-Express-and-POSTGRES-DB",
             "Disc":"CRUD REST SERVICE WITH VALIDATION and POSTGRESQL LAYERED ARCHITECTURE",
-            "Image":Nodeimage
+            "Image":Nodeimage,
+            "Link":"https://github.com/Sanidhya22/CRUD-REST-API-with-NODE-JS-Express-and-POSTGRES-DB"
         }
     ]
 }

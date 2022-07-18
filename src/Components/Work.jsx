@@ -58,7 +58,7 @@ function Work() {
                   <p className="projectdisc">{i.Disc}</p>
                 </div>
                 <a
-                  href="https://github.com/Sanidhya22"
+                  href={i.Link}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
