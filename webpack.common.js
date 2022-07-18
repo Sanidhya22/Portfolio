@@ -7,11 +7,17 @@ module.exports = {
     filename: 'bundle.[hash].js',
     path: path.resolve(__dirname, 'dist')
     },
+    // plugins: [
+    //     new HtmlWebpackPlugin({
+    //       title: 'Production',
+    //     }),
+    //   ],
+ //,
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html'
     })
-  ],
+ ],
   resolve: {
     modules: [__dirname, 'src', 'node_modules'],
     extensions: ['*', '.js', '.jsx', '.tsx', '.ts']
