@@ -11,14 +11,15 @@
     }
     .Projectsdiv{
         margin: 0 auto;
-        width: 900px;
+        // width: 900px;
+        width: 70%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         box-sizing: border-box;
     
         .card1{
-            flex: 0 1 30%;
+            // flex: 0 1 30%;
             box-sizing: border-box;
             justify-content: space-between;
             overflow: hidden;
@@ -82,9 +83,8 @@
     }
 
     .Techdiv{
-        
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: center;
         cursor: pointer;
         div{

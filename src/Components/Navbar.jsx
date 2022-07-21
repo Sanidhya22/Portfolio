@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 // import styled from "styled-components";
 // import { keyframes } from "styled-components";
 import "../Styles/Navbar.scss";
+import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { motion } from "framer-motion";
+
 const Navbar = () => {
   const i = "</>";
+  const [toggle, setToggle] = useState(false);
   return (
     <>
       <header className="Header">
@@ -27,6 +31,26 @@ const Navbar = () => {
               <a href={"#Contact"}>Contact</a>
             </li>
           </ul>
+          <div className="app__navbar-menu">
+            <HiMenuAlt4 onClick={() => setToggle(true)} />
+            {toggle && (
+              <motion.div
+                whileInView={{ x: [300, 0] }}
+                transiton={{ duration: 0.85, ease: "easeOut" }}
+              >
+                <HiX onClick={() => setToggle(false)} />
+                <ul className="app__navbar-links">
+                  {["About", "Work", "Skills", "Contact"].map((item) => (
+                    <li key={item}>
+                      <a href={`#${item}`} onClick={() => setToggle(false)}>
+                        {item}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            )}
+          </div>
         </div>
       </header>
       {/* <AnimatedGradientText>

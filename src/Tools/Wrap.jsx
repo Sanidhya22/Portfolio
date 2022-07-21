@@ -7,11 +7,11 @@ const Wrap = (WrapperComponent, Title) =>
     return (
       <React.Fragment>
         <div className="Wrap">
-          <SocialLinks />
+          <SocialLinks className="Socialink" />
           <div className="wrappeddiv">
             <WrapperComponent />
           </div>
-          <Navigatidots Title={Title} />
+          <Navigatidots className="Navidots" Title={Title} />
         </div>
       </React.Fragment>
     );

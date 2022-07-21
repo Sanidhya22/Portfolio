@@ -10,5 +10,11 @@
     flex-direction: column;
     margin-bottom:40px;
     margin-left: 70px;
+
+    @media screen and (max-width: 950px) {
+        margin-left: 0%
+    }
+
   
 }
+
