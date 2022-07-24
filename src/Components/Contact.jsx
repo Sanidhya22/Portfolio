@@ -13,7 +13,6 @@ function Contact() {
   const handleEmojiToast = () => {
     toast("Message Sent", { icon: { type: "custom", content: "😃" } });
   };
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
