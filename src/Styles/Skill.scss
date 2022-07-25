@@ -35,6 +35,15 @@
             // box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
         
     }
+    .Skilltitle:hover{
+        
+        box-shadow: 0 0 .2rem #fff,
+            0 0 2.0rem #3543de,
+            inset 0 0 1.0rem #3543de,
+              0 0 .6rem #fff,
+              0 0 4rem #3543de;
+            //   0 0 0.8rem #bc13fe,
+    }
     .Icon{
         margin: 1rem;
         color: #2c6fbb;

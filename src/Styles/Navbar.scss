@@ -46,7 +46,8 @@
     a{
         font-size: larger;
         font-weight: 600;
-        color: black;
+        // color: black;
+        color: inherit;
         text-decoration: none !important;
     } 
     a:hover{
