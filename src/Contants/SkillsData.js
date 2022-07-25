@@ -28,3 +28,7 @@ export const skills =[
     {"Name": "Bootstrap",
     "Icon":BsFillBootstrapFill }
 ]
+export const Contactdetail={
+    "email":"sanidhyanigam99@gmail.com",
+    "MobNo":"+91 9993481424"
+}

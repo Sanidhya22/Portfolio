@@ -12,22 +12,21 @@
         padding-bottom: 10px;
     }
     .div2{
-        width: 600px;
+        // width: 600px;
         margin: 10px; 
-        @media screen and (max-width: 1200px) {
-            width: 500px;
-        }
+        // @media screen and (max-width: 1200px) {
+        //     width: 500px;
+        // }
 
-        @media screen and (max-width: 750px) {
-            width: 400px;
-        }
+        // @media screen and (max-width: 750px) {
+        //     width: 400px;
+        // }
 
-        @media screen and (max-width: 580px) {
-           width: 400px;
-        }
+        // @media screen and (max-width: 580px) {
+        //    width: 20rem;
+        // }
     }
     .contactdiv1{
-        margin: 40px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -48,12 +47,19 @@
     section{
         margin: 20px;
         // background-color:#DCD7C9;
-        padding: 20px;
+        padding: 20px 10px 20px 10px;
         border-radius: 10px;
         box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
+        font-size: large;
+        font-weight: 600 ;
         // margin-right: inherit;
+        .Copyclipboard{
+            margin-left:inherit ;
+            cursor: pointer;}
+        .Copyclipboard:hover{
+            color:#A27B5C;
+        }
     }
-    
     input {
         border-width: 0px;
         box-shadow: 3px 3px 10px 3px rgba(0, 0, 0,0.2) ;
@@ -61,19 +67,19 @@
         color:white;
         padding: 10px;
         border-radius: 15px;
-        width: 100%;
+        width: 500px;
         height:50px;
         background-color: #151515;
         @media screen and (max-width: 1200px) {
-            width: 80%;
+            width: 470px;
         }
 
         @media screen and (max-width: 750px) {
-            width: 70%;
+            width: 380px
         }
 
         @media screen and (max-width: 580px) {
-           width: 60%;
+           width: 280px;
         }
     }
     textarea{
@@ -82,19 +88,19 @@
         padding: 10px;
         border-radius: 15px;
         color:white;
-        width: 100%;
+        width: 500px;
         border-width: 0px;
         background-color: #151515;
         @media screen and (max-width: 1200px) {
-            width: 80%;
+            width: 480px;
         }
 
         @media screen and (max-width: 750px) {
-            width: 70%;
+            width: 380px;
         }
 
         @media screen and (max-width: 580px) {
-           width: 60%;
+           width: 280px;
         }
     }
     button{

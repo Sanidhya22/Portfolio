@@ -1,15 +1,20 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../Styles/Contact.scss";
 import { motion } from "framer-motion";
 import { HiMail } from "react-icons/hi";
+import { FaCopy, FaPaste } from "react-icons/fa";
 import { BiMobileAlt } from "react-icons/bi";
 import Wrap from "../Tools/Wrap";
 import { toast } from "wc-toast";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { Contactdetail } from "../Contants/SkillsData";
+import { useState } from "react";
 
 function Contact() {
   const form = useRef();
-
+  const [isCopyedEmail, setCopyed] = useState(false);
+  const [isCopyedMob, setCopyed2] = useState(false);
   const handleEmojiToast = () => {
     toast("Message Sent", { icon: { type: "custom", content: "😃" } });
   };
@@ -34,6 +39,31 @@ function Contact() {
       );
   };
 
+  const handlecopy = (Type) => {
+    if (Type === "email") {
+      if (isCopyedEmail === false) {
+        setCopyed(true);
+      } else {
+        setCopyed(false);
+      }
+    } else {
+      if (isCopyedMob === false) {
+        setCopyed2(true);
+      } else {
+        setCopyed2(false);
+      }
+    }
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (isCopyedEmail || isCopyedMob) {
+        setCopyed(false);
+        setCopyed2(false);
+      }
+    }, 2000);
+  }, [isCopyedEmail, isCopyedMob]);
+
   return (
     <React.Fragment>
       <wc-toast></wc-toast>
@@ -47,11 +77,29 @@ function Contact() {
         <div className="contactdiv1">
           <section>
             {" "}
-            <HiMail /> sanidhyanigam99@gmail.com
+            <HiMail /> {Contactdetail.email}
+            <CopyToClipboard
+              className="Copyclipboard"
+              onCopy={() => {
+                handlecopy("email");
+              }}
+              text={Contactdetail.email}
+            >
+              {isCopyedEmail === false ? <FaCopy /> : <FaPaste />}
+            </CopyToClipboard>
           </section>
           <section>
             <BiMobileAlt />
-            +91 9993481424
+            {Contactdetail.MobNo}
+            <CopyToClipboard
+              className="Copyclipboard"
+              onCopy={() => {
+                handlecopy("mob");
+              }}
+              text={Contactdetail.MobNo}
+            >
+              {isCopyedMob === false ? <FaCopy /> : <FaPaste />}
+            </CopyToClipboard>
           </section>
         </div>
         <form ref={form} onSubmit={sendEmail}>
