@@ -4,15 +4,19 @@ import React, { useState } from "react";
 import "../Styles/Navbar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import Mode from "./Modetoggle";
 
-const Navbar = () => {
+const Navbar = ({ Toggle, theme }) => {
   const i = "</>";
   const [toggle, setToggle] = useState(false);
   return (
     <>
       <header className="Header">
         <div className="div1">
-          <p className="titleLogo">Saniddhya99{i}</p>
+          <div className="TitleToggle">
+            <p className="titleLogo">Saniddhya99{i}</p>
+            <Mode Toggle={Toggle} theme={theme} />
+          </div>
 
           <ul className="Navbarlist">
             <li>

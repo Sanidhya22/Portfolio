@@ -16,6 +16,11 @@
         align-items: center;
         background-color: rgba(0, 0, 0, 0.2);
     }
+    .TitleToggle{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     .Navbarlist{
         display: flex;
         flex-direction: row;
