@@ -4,9 +4,9 @@ function Mode({ Toggle, theme }) {
   return (
     <>
       {theme === "light" ? (
-        <MdLightMode onClick={Toggle} size={35} />
+        <MdLightMode onClick={Toggle} size={35} style={{ cursor: "pointer" }} />
       ) : (
-        <MdModeNight onClick={Toggle} size={35} />
+        <MdModeNight onClick={Toggle} size={35} style={{ cursor: "pointer" }} />
       )}
     </>
   );
