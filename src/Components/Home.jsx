@@ -12,7 +12,7 @@ function Home() {
         className="Home"
       >
         <h1>
-          Hello,✌Saniddhya Here <br />
+          Hello,Saniddhya Here ✌ <br />
           Frontend Developer
         </h1>
       </motion.div>
