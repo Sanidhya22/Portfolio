@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Education } from "../Contants/Academics";
-import img from "../Assets&Images/Snapchat-131483175__01.jpg";
+import img from "../Assets&Images/Myimg.png";
 import "../Styles/About.scss";
 import Wrap from "../Tools/Wrap";
 function About() {

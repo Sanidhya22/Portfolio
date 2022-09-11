@@ -108,7 +108,6 @@ function Contact() {
               type="text"
               placeholder="  Your name"
               name="name"
-              pattern="[A-Za-z0-9]{1,20}"
               required="required"
             />
           </div>
