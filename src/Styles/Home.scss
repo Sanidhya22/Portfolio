@@ -1,25 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 .Home{
-    text-align: center;
+    text-align: left;
     
     h1 {
+      margin: 0px 10px ;
         padding: 11rem 1rem;
         font-size: 5rem !important;
-        font-family: 'Edu SA Beginner', cursive ;
+        font-family: 'Poppins', sans-serif;
 
-    
-    @media screen and (max-width: 1200px) {
-        font-size: 5rem !important;
+   
+    @media screen and (max-width: 1000px) {
+        font-size: 4rem !important;
+        padding: 6rem 1rem 11rem 1rem;
     }
 
     @media screen and (max-width: 450px) {
-        font-size: 2.5rem !important;
-        padding: 10rem 0rem 8rem 0rem;
+        font-size: 3.5rem !important;
+        padding: 7rem 0rem 8rem 0rem;
     }
 
     @media screen and (max-width: 375px) {
-        font-size: 2rem !important;
-        padding: 5rem 1rem 3rem 1rem;
+      font-size: 1.25rem;
+      font-weight: 300;
+      padding: 7rem 1rem 3rem 1rem;
        } 
-      }
+    }
+
+    p{
+        font-size: 3rem;
+        padding: 1rem 0rem;
+        font-weight: 300;
+
+    
+    @media screen and (max-width: 1000px) {
+        font-size: 2.5rem !important;
+    
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 1.5rem !important;
+ 
+    }
+
+    @media screen and (max-width: 375px) {
+        font-size: 1.25rem !important;
+       } 
+    }
+    .Typewriter {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+
+    // .typewriter{
+    //     position: relative;
+    // }
+    // .typewriter::after {
+    //     content: '|';
+    //     position: absolute;
+    //     right: 0;
+    //     color: black;
+    //     // background-color: white;
+    //     width: 100%;
+    //     animation: typing 3s steps(20) alternate infinite,
+    //                 line 500ms infinite;
+    // }
+    // @keyframes typing{
+    //     to{
+    //         width: 60%;
+    //     }
+    // }
+    // @keyframes line {
+    //     50%{
+    //         color: transparent;
+    //     }
+    // }
+      
+
+    // .typecurser{
+    //     font-weight: 100;
+    //     font-size: 30px;
+    //     color: #2E3D48;
+    //     -webkit-animation: 1s blink step-end infinite;
+    //     -moz-animation: 1s blink step-end infinite;
+    //     -ms-animation: 1s blink step-end infinite;
+    //     -o-animation: 1s blink step-end infinite;
+    //     animation: 
+    //     1s blink step-end infinite;
+    //   }
+      
+    //   @keyframes blink {
+    //     from, to {
+    //       color: transparent;
+    //     }
+    //     50% {
+    //       color: black;
+    //     }
+    //   }
+      
+    //   @-moz-keyframes blink {
+    //     from, to {
+    //       color: transparent;
+    //     }
+    //     50% {
+    //       color: black;
+    //     }
+    //   }
+      
+    //   @-webkit-keyframes blink {
+    //     from, to {
+    //       color: transparent;
+    //     }
+    //     50% {
+    //       color: black;
+    //     }
+    //   }
+      
+    //   @-ms-keyframes blink {
+    //     from, to {
+    //       color: transparent;
+    //     }
+    //     50% {
+    //       color: black;
+    //     }
+    //   }
+      
+    //   @-o-keyframes blink {
+    //     from, to {
+    //       color: transparent;
+    //     }
+    //     50% {
+    //       color: black;
+    //     }
+    //   }
+  
+
 }

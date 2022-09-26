@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Wrap from "../Tools/Wrap";
 import "../Styles/Home.scss";
+import Typewriter from "typewriter-effect";
 function Home() {
   return (
     <React.Fragment>
@@ -12,9 +13,21 @@ function Home() {
         className="Home"
       >
         <h1>
-          Hello,Saniddhya Here ✌ <br />
-          Frontend Developer
+          Saniddhya Nigam ✌ <br />
+          <p> Frontend Developer</p>
+          <Typewriter
+            options={{
+              strings: ["Software Engineer ", "Problem Solver"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </h1>
+
+        {/* <h2 className="typewriter">
+            The cat and the hat.
+            <spam className="typecurser">|</spam>
+          </h2> */}
       </motion.div>
     </React.Fragment>
   );
