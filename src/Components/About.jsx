@@ -20,10 +20,10 @@ function About() {
 
         <p className="p-text">
           Hello, My Self Saniddhya, I'm a FrontEnd web developer Having
-          Knowledge of JavaScript , Reactjs NodeJs ,HTML , CSS , Bootstrap
-          ,MySQL. <br /> Having own experience of 1 year ,Currently working at
-          Epam Systems having 5 months of experience .And Previously worked at
-          Wipro Limited as a Project Enginner for 6 Months
+          Knowledge of JavaScript , ReactJs , AngularJS , Gitlab CI/CD , SCSS.{" "}
+          <br /> Having own experience of 1.6 year ,Currently working at Epam
+          Systems having 1 months of experience .And Previously worked at Wipro
+          Limited as a Project Enginner for 6 Months
         </p>
         <div className="Academics">
           <h3>Academics</h3>

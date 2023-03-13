@@ -23,11 +23,6 @@ function Home() {
             }}
           />
         </h1>
-
-        {/* <h2 className="typewriter">
-            The cat and the hat.
-            <spam className="typecurser">|</spam>
-          </h2> */}
       </motion.div>
     </React.Fragment>
   );

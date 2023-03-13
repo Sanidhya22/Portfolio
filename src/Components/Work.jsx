@@ -55,7 +55,7 @@ function Work() {
                 <div className="card-body">
                   <span className="tag tag-teal">{Title}</span>
                   <p className="projecttitle">{i.Name}</p>
-                  <p className="projectdisc">{i.Disc}</p>
+                  <p className="projectdisc">{i.Disc}</p>{" "}
                 </div>
                 <a
                   href={i.Link}

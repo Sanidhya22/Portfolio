@@ -19,6 +19,7 @@ function Contact() {
     toast("Message Sent", { icon: { type: "custom", content: "😃" } });
   };
   const sendEmail = (e) => {
+    console.log(e);
     e.preventDefault();
     emailjs
       .sendForm(
