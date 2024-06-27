@@ -34,7 +34,7 @@ export function Profile() {
           <div className="mb-10 flex items-center justify-between flex-wrap gap-6">
             <div className="flex items-center gap-6">
               <Avatar
-                src="/img/my-img.png"
+                src="/Portfolio/img/my-img.png"
                 alt="bruce-mars"
                 size='xxl'
                 variant="rounded"
