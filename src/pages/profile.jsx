@@ -8,8 +8,6 @@ import {
   Tabs,
   TabsHeader,
   Tab,
-  Switch,
-  Tooltip,
   Button,
 } from "@material-tailwind/react";
 import {
@@ -19,9 +17,8 @@ import {
 } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import { ProfileInfoCard } from "@/widgets/cards";
+import { PROFILE_INFO, SOCIAL_LINKS } from "../data/profile-info";
 import { projectsData } from "@/data";
-import { PROFILE_INFO } from "../data/profile-info";
-import { EducationInfo } from "@/widgets/cards/education-info";
 
 export function Profile() {
   return (
@@ -59,10 +56,6 @@ export function Profile() {
                     <HomeIcon className="-mt-1 mr-2 inline-block h-5 w-5" />
                     Info
                   </Tab>
-                  <Tab value="message">
-                    <ChatBubbleLeftEllipsisIcon className="-mt-0.5 mr-2 inline-block h-5 w-5" />
-                    Blogs
-                  </Tab>
                 </TabsHeader>
               </Tabs>
             </div>
@@ -76,9 +69,10 @@ export function Profile() {
                 location: PROFILE_INFO.LOCATION,
                 social: (
                   <div className="flex items-center gap-4">
-                    <i className="fa-brands fa-github text-black-700" />
-                    <i className="fa-brands fa-linkedin text-blue-700" />
-                    <i className="fa-brands fa-twitter text-blue-400" />
+                    <Link to={SOCIAL_LINKS.github.LINK}>
+                      <i className="fa-brands fa-github text-black-700" /></Link>
+                    <Link to={SOCIAL_LINKS.linkedin.LINK}>  <i className="fa-brands fa-linkedin text-blue-700" /></Link>
+                    <Link to={SOCIAL_LINKS.github.LINK}> <i className="fa-brands fa-twitter text-blue-400" /></Link>
                   </div>
                 ),
               }}
@@ -91,21 +85,10 @@ export function Profile() {
               Projects
             </Typography>
 
-            <div className="mt-6 grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mt-6 gap-10 flex flex-col">
               {projectsData.map(
-                ({ img, title, description, route, }) => (
+                ({ img, title, description, github, live }) => (
                   <Card key={title} color="transparent" shadow={false}>
-                    <CardHeader
-                      floated={false}
-                      color="gray"
-                      className="mx-0 mt-0 mb-4 h-64 xl:h-40"
-                    >
-                      <img
-                        src={img}
-                        alt={title}
-                        className="h-full w-full object-cover"
-                      />
-                    </CardHeader>
                     <CardBody className="py-0 px-1">
 
                       <Typography
@@ -122,19 +105,22 @@ export function Profile() {
                         {description}
                       </Typography>
                     </CardBody>
-                    <CardFooter className="mt-6 flex items-center justify-between py-0 px-1">
-                      <Link to={route}>
+                    <CardFooter className="mt-6 flex items-center gap-6 py-0 px-1">
+
+                      {live ? <Link to={live}>
                         <Button variant="outlined" size="sm">
                           live
                         </Button>
                       </Link>
-                      <Link to={route}>
+                        : <></>}
 
-                        <Button variant="outlined" size="sm">
-                          <i className="fa-brands fa-github text-black-700 pr-2" />
-                          source
-                        </Button>
-                      </Link>
+                      {github &&
+                        <Link to={github}>
+                          <Button variant="outlined" size="sm">
+                            <i className="fa-brands fa-github text-black-700 pr-2" />
+                            source
+                          </Button>
+                        </Link>}
 
                     </CardFooter>
                   </Card>

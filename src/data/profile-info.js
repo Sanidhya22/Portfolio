@@ -8,18 +8,18 @@ export const PROFILE_INFO = {
 }
 
 
-export const SOCIAL_LINKS = [
-    {
+export const SOCIAL_LINKS = {
+    github:{
         NAME: 'GITHUB',
         LINK: 'https://github.com/Sanidhya22'
     },
-    {
+   linkedin: {
         NAME: 'LINKEDIN',
         LINK: 'https://www.linkedin.com/in/sanidhya-nigam-99a44a199/'
     },
-    {
+   twitter: {
         NAME: 'TWITTER',
         LINK: 'https://twitter.com/sanidhyanigam99'
     }
 
-]
+}
